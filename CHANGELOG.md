@@ -1,3 +1,15 @@
+<a name="11.0.0"></a>
+## [11.0.0](https://github.com/symposion/roll20-shaped-scripts/compare/10.0.1...11.0.0) (2017-05-28)
+
+### BREAKING CHANGES
+
+* **config-ui:** This script now requires a minimum sheet version of 14.1.1.
+
+### Features
+
+* **config:** Added utility and utilityMacro to !shaped-abilities
+* **config:** Changed attack and attackMacro to offense and offenseMacro for !shaped-abilities
+
 <a name="10.0.1"></a>
 ## [10.0.1](https://github.com/symposion/roll20-shaped-scripts/compare/10.0.0...10.0.1) (2017-04-16)
 
