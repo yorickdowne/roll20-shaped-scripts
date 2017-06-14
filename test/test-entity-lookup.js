@@ -171,13 +171,13 @@ describe('entity-lookup', function () {
     el.configureEntity('classes', [SpellManager.getSpellDenormaliser(), spellListGrouper.entityProcessor],
       EntityLookup.getVersionChecker('2.0.0', 'classes'));
 
-    let jsonFiles = glob.sync('../5eshapedscriptdata/sources/{public,private}/*.json');
+    let jsonFiles = glob.sync('./test/data/*.json');
     expect(jsonFiles).to.not.be.empty;
-    const phb = jsonFiles.find(file => file.indexOf('PlayersHandbook') !== -1);
-    const srd = jsonFiles.find(file => file.indexOf('SRD') !== -1);
-    jsonFiles = _.without(jsonFiles, phb, srd);
-    jsonFiles.unshift(phb);
-    jsonFiles.unshift(srd);
+//    const phb = jsonFiles.find(file => file.indexOf('PlayersHandbook') !== -1);
+//    const srd = jsonFiles.find(file => file.indexOf('SRD') !== -1);
+//    jsonFiles = _.without(jsonFiles, phb, srd);
+//    jsonFiles.unshift(phb);
+//    jsonFiles.unshift(srd);
 
     jsonFiles.forEach(function (jsonFile) {
       const data = JSON.parse(fs.readFileSync(jsonFile, 'utf8'));
