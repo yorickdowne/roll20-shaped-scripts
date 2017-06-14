@@ -18,7 +18,7 @@ Skills Perception+ 13, Stealth +6
 Damage Immunities cold
 CHA
 14 (+2)
-Senses bl indsight 60ft., darkvis ion 120 ft., passive Perception 23
+Senses blindsight 60ft., darkvision 120 ft., passive Perception 23
 Languages Common, Draconic
 Challenge 20 (24,500 XP)
 Ice Walk. The dragon can move across and climb icy surfaces
@@ -106,5 +106,5 @@ acid, cold, necrotic, poison, and psychic damage.
 If the dragon wishes to move through a wall, it can
 do so without slowing down. The portion of the wall
 the dragon moves through is destroyed, however.
-If the dragon dies, the fog and precipitation fade within
-1 day. The ice walls melt over the course of 1d10 days.
+If the dragon dies, the fog and precipitation fade within 1
+day. The ice walls melt over the course of 1d10 days.
