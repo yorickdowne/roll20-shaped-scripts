@@ -33,7 +33,7 @@ Attribute.prototype.get = function (propName) {
   }
 };
 
-const arrowsQty = new Attribute('repeating_ammo_YYY_qty', 50);
+const arrowsQty = new Attribute('repeating_ammo_YYY_uses', 50);
 
 const attributeArray = [
   new Attribute('normalAttr', 'someVal'),
@@ -42,7 +42,7 @@ const attributeArray = [
   new Attribute('repeating_foo_XXX_other', 'someVal'),
   new Attribute('repeating_foo_YYY_something', 'someVal'),
   new Attribute('repeating_foo_YYY_other', 'someVal'),
-  new Attribute('repeating_ammo_XXX_qty', 20),
+  new Attribute('repeating_ammo_XXX_uses', 20),
   new Attribute('repeating_ammo_XXX_weight', 0.25),
   new Attribute('repeating_ammo_XXX_name', 'bolts'),
   arrowsQty,
