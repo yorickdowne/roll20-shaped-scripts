@@ -33,11 +33,7 @@ Attribute.prototype.get = function (propName) {
   }
 };
 
-<<<<<<< HEAD
 const ammoUses = new Attribute('repeating_ammo_YYY_uses', 50);
-=======
-const arrowsQty = new Attribute('repeating_ammo_YYY_uses', 50);
->>>>>>> 1783c31... autoAmmo changed to recognize uses instead of qty; minimum sheet version 14.1.1. Left "Quantity" and "--qty" user-facing, as it seems clearer.
 
 const attributeArray = [
   new Attribute('normalAttr', 'someVal'),

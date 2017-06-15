@@ -41,11 +41,11 @@ describe('uses-manager', function () {
       expect(attr.props).to.have.property('current', 0);
     });
 
-    it('defaults to 1 for 0 per_use', function () {
+    it('does not decrement for 0 per_use', function () {
       const attr = new Roll20Object('attribute', { name: 'uses', max: 3, current: 1 });
       roll20.getAttrObjectByName.returns(attr);
       usesManager.handleUses({ character: char, repeatingItem: 'repItem', perUse: 0 });
-      expect(attr.props).to.have.property('current', 0);
+      expect(attr.props).to.have.property('current', 1);
     });
 
     it('decrements multiple for peruse > 1', function () {
@@ -64,11 +64,11 @@ describe('uses-manager', function () {
       expect(reporter.messages).to.have.lengthOf(1);
     });
 
-    it('ignores traits with no max uses', function () {
-      const attr = new Roll20Object('attribute', { name: 'uses', current: 1 });
+    it('ignores traits with no current uses', function () {
+      const attr = new Roll20Object('attribute', { name: 'uses', current: null });
       roll20.getAttrObjectByName.returns(attr);
       usesManager.handleUses({ character: char, repeatingItem: 'repItem', perUse: 2 });
-      expect(attr.props).to.have.property('current', 1);
+      expect(attr.props).to.have.property('current', null);
       expect(reporter.messages).to.have.lengthOf(0);
     });
   });

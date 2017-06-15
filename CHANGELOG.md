@@ -1,3 +1,18 @@
+<a name="11.1.0"></a>
+## [11.1.0](https://github.com/symposion/roll20-shaped-scripts/compare/10.0.1...11.1.0) (2017-06-15)
+
+### BREAKING CHANGES
+
+* **ammo:** This script now requires a minimum sheet version of 14.1.1.
+
+### Bug Fixes
+
+* **import:** Higher level healing dice now import correctly
+
+### Features
+
+* **uses:** Uses deduction now works on entries without max uses
+
 <a name="10.0.1"></a>
 ## [10.0.1](https://github.com/symposion/roll20-shaped-scripts/compare/10.0.0...10.0.1) (2017-04-16)
 
